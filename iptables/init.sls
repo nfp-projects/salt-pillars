@@ -8,7 +8,3 @@ iptables.default:
     - INPUT -i lo -j ACCEPT
     - INPUT -s 10.0.0.0/8 -j ACCEPT
 
-{% if grains['role'] == 'router' %}
-include:
-  - iptables.router
-{% endif %}
