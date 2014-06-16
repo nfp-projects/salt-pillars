@@ -2,15 +2,18 @@ base:
   '*':
     - pkg
     - iptables
-  'role:www':
+  'roles:www':
     - match: grain
     - nginx
     - nginx.www
-  'role:router':
+  'roles:router':
     - match: grain
     - nginx
     - nginx.router
     - iptables.router
-  'role:saltmaster':
+  'roles:saltmaster':
     - match: grain
     - iptables.saltmaster
+  'roles:db':
+    - match: grain
+    - mysql
