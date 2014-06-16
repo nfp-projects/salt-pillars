@@ -4,4 +4,15 @@ pkgs:
   ssh: openssh-clients
   git: git
   nginx: nginx
+  php:
+    - php-common
+    - php-gd
+    - php-ldap
+    - php-mbstring
+    - php-mysql
+    - php-pdo
+    - php-pear
+    - php-pecl-apc
+    - php-tidy
+    - php-xml
   {% endif %}
