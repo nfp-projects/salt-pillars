@@ -1,6 +1,7 @@
 iptables.router:
   raw:
     - PREROUTING -i eth0 -m multiport -p tcp ! --sport 22,80,443 -j NOTRACK
+    - PREROUTING -i eth0 -m multiport -p udp ! --sport 53 -j NOTRACK
     - PREROUTING -d 82.221.107.26 -p tcp --dport 80 -j NOTRACK
     - PREROUTING -d 82.221.107.26 -p tcp --dport 443 -j NOTRACK
     - OUTPUT -s 82.221.107.26 -p tcp --sport 80 -j NOTRACK
