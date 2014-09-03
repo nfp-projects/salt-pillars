@@ -3,6 +3,8 @@ pkgs:
   vim: vim-enhanced
   ssh: openssh-clients
   git: git
+  node: nodejs
+  npm: npm
   nginx: nginx
   mysqld: mysql-server
   mysql: mysql
