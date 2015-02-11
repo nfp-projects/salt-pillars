@@ -17,3 +17,4 @@ base:
   'roles:db':
     - match: grain
     - mysql
+    - postgres

@@ -14,7 +14,8 @@ pkgs:
     client: postgresql94
     server: postgresql94-server
     service: postgresql-9.4
-    config: /var/lib/pgsql/9.4/data/postgresql.conf 
+    config: /var/lib/pgsql/9.4/data/postgresql.conf
+    hba: /var/lib/pgsql/9.4/data/pg_hba.conf 
     repo: http://yum.postgresql.org/9.4/redhat/rhel-6-x86_64/pgdg-centos94-9.4-1.noarch.rpm
   php:
     php-common: php-common
