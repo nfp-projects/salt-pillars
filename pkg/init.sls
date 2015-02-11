@@ -10,6 +10,12 @@ pkgs:
   mysql: mysql
   mysql-python: MySQL-python
   php-fpm: php-fpm
+  postgres:
+    client: postgresql94
+    server: postgresql94-server
+    service: postgresql-9.4
+    config: /var/lib/pgsql/9.4/data/postgresql.conf 
+    repo: http://yum.postgresql.org/9.4/redhat/rhel-6-x86_64/pgdg-centos94-9.4-1.noarch.rpm
   php:
     php-common: php-common
     php-gd: php-gd
