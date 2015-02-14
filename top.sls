@@ -2,6 +2,7 @@ base:
   '*':
     - pkg
     - iptables
+    - mine
   'roles:www':
     - match: grain
     - nginx
@@ -14,6 +15,9 @@ base:
   'roles:saltmaster':
     - match: grain
     - iptables.saltmaster
+  'roles:api':
+    - match: grain
+    - nodejs.api
   'roles:db':
     - match: grain
     - mysql
