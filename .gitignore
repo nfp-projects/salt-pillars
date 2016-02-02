@@ -1,3 +1,1 @@
-mysql/users.sls
-postgres/users.sls
-postgres/api.sls
+*/users.*

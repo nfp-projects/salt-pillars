@@ -2,4 +2,5 @@ base:
   '*':
     - pkg
     - mine
+    - ad
 
