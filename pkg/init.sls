@@ -3,6 +3,7 @@ pkgs:
   vim: vim-enhanced
   ssh: openssh-clients
   git: git
+  nodejs: nodejs
   base:
     - authconfig
     - krb5-workstation
@@ -16,4 +17,6 @@ pkgs:
     - realmd
     - net-tools
     - git
+    - gcc-c++
+    - make
   {% endif %}
