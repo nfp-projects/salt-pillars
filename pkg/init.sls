@@ -5,18 +5,22 @@ pkgs:
   git: git
   nodejs: nodejs
   base:
-    - authconfig
-    - krb5-workstation
-    - pam_krb5
-    - samba-common
-    - oddjob-mkhomedir
     - sudo
     - ntp
-    - samba-winbind-clients
     - vim-enhanced
-    - realmd
     - net-tools
     - git
     - gcc-c++
     - make
+  ad:
+    - realmd
+    - authconfig
+    - oddjob-mkhomedir
+    - samba-common
+    - samba-winbind-clients
+    - krb5-workstation
+    - pam_krb5
   {% endif %}
+
+include:
+  - pkg.pg
