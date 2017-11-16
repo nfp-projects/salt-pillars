@@ -4,6 +4,7 @@ pkgs:
   ssh: openssh-clients
   git: git
   nodejs: nodejs
+  nginx: nginx
   base:
     - sudo
     - ntp
@@ -12,6 +13,8 @@ pkgs:
     - git
     - gcc-c++
     - make
+    - policycoreutils
+    - policycoreutils-python
   ad:
     - realmd
     - authconfig
