@@ -1,0 +1,4 @@
+docker-registries:
+  hub:
+    username: docker-hub-username-here
+    password: docker-hub-password-here

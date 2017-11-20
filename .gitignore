@@ -1,4 +1,4 @@
-*/users_*
+*/users_*.sls
 ad/users.sls
 ssh.sls
 docker.sls

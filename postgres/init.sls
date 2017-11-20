@@ -1,2 +1,2 @@
 include:
-  - postgres.users_mail
+  - postgres.users_postgres
