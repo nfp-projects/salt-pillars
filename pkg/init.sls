@@ -6,23 +6,17 @@ pkgs:
   nodejs: nodejs
   nginx: nginx
   base:
-    - sudo
-    - ntp
     - vim-enhanced
-    - net-tools
-    - git
-    - gcc-c++
-    - make
-    - policycoreutils
-    - policycoreutils-python
   ad:
     - realmd
-    - authconfig
+    - sssd
+    - adcli
+    - oddjob
     - oddjob-mkhomedir
     - samba-common
+    - samba-common-tools
     - samba-winbind-clients
     - krb5-workstation
-    - pam_krb5
   {% endif %}
 
 include:
